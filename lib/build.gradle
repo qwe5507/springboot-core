@@ -9,7 +9,9 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
 //스프링 부트 외부 라이브러리 버전 변경
-//ext['tomcat.version']='10.1.4'
+//https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html#appendix.dependency-versions.properties
+//속성 값 위 링크 참고
+ext['tomcat.version']='10.1.4'
 
 configurations {
     compileOnly {
