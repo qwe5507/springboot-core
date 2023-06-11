@@ -11,7 +11,7 @@ import org.springframework.transaction.TransactionManager;
 import javax.sql.DataSource;
 
 @Slf4j
-@Configuration
+//@Configuration // 주석처리
 public class DbConfig {
 
     @Bean
