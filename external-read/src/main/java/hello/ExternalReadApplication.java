@@ -8,11 +8,12 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Import;
 
 //@Import(MyDataSourceEnvConfig.class)
+//@Import(MyDataSourceValueConfig.class)
 //@Import(MyDataSourceConfigV1.class)
 //@Import(MyDataSourceConfigV2.class)
 @Import(MyDataSourceConfigV3.class)
-@ConfigurationPropertiesScan({"hello"})
-@SpringBootApplication(scanBasePackages = "hello.datasource")
+//@ConfigurationPropertiesScan({"hello"})
+@SpringBootApplication(scanBasePackages = {"hello.datasource", "hello.pay"})
 public class ExternalReadApplication {
 
     public static void main(String[] args) {
@@ -21,4 +22,4 @@ public class ExternalReadApplication {
 
 }
 
-//@Import(MyDataSourceValueConfig.class)
+
