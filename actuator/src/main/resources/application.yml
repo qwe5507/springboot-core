@@ -18,6 +18,10 @@ management:
     web:
       exposure:
         include: "*"
+      base-path: "/manage"
+  server:
+    port: 9292
+
 info:
     app:
       name: hello-actuator
