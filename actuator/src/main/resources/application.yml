@@ -10,17 +10,17 @@ management:
       mode: full
   endpoint:
     health:
-#      show-details: always
       show-components: always
+    #      show-details: always
     shutdown:
       enabled: true
   endpoints:
     web:
       exposure:
         include: "*"
-      base-path: "/manage"
-  server:
-    port: 9292
+#      base-path: "/manage"
+#  server:
+#    port: 9292
 
 info:
     app:
@@ -28,7 +28,9 @@ info:
       company: yh
 server:
   port: 8081
-
+  tomcat:
+    mbeanregistry:
+      enabled: true
 logging:
   level:
     hello.controller: debug
