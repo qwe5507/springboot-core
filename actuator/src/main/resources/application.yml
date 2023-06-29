@@ -27,7 +27,6 @@ info:
       name: hello-actuator
       company: yh
 server:
-  port: 8081
   tomcat:
     mbeanregistry:
       enabled: true
