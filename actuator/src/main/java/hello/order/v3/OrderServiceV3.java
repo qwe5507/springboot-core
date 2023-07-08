@@ -18,7 +18,6 @@ public class OrderServiceV3 implements OrderService {
         this.registry = registry;
     }
 
-    @Counted("my.order")
     @Override
     public void order() {
         Timer timer = Timer.builder("my.order")
@@ -42,7 +41,6 @@ public class OrderServiceV3 implements OrderService {
         }
     }
 
-    @Counted("my.order")
     @Override
     public void cancel() {
         Timer timer = Timer.builder("my.order")
